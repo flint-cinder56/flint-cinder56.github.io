@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>溏心vlog-城市漫游与生活记录频道</title>
+<meta name="description" content="溏心vlog是一个以城市漫游、菜市场探访、手作早餐和深夜散步为主的生活记录频道。11月更新了苏州河沿线早市、旧书店与雨天通勤三组素材，附拍摄器材与剪片流程说明。">
+<meta name="keywords" content="溏心vlog">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e8862e'/%3E%3Cellipse cx='32' cy='34' rx='17' ry='14' fill='%23fff3df'/%3E%3Cellipse cx='32' cy='33' rx='8' ry='7' fill='%23f6a83c'/%3E%3Ccircle cx='18' cy='22' r='3' fill='%23fff3df'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"溏心vlog","description":"城市漫游与生活记录频道，覆盖早市、旧书店、早餐手作与深夜散步素材。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"溏心vlog的素材一般多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"周更两到三条正片，工作日早餐片段放在周三，长片放在周六。11月7日上传的苏州河早市片长14分钟，是本月最长的一条。"}},
+{"@type":"Question","name":"拍菜市场早晨用什么机器和镜头？","acceptedAnswer":{"@type":"Answer","text":"主力机为索尼FX30，配适马18-50mm F2.8，弱光下用35mm F1.4补拍。菜市场顶棚光线偏绿，白平衡手动定在4300K左右。"}},
+{"@type":"Question","name":"旧书店和二手唱片的拍摄如何收音？","acceptedAnswer":{"@type":"Answer","text":"室内翻书声用领夹麦贴近衣领收录，环境声另用一支枪麦朝天花板收反射音，后期在Audition里分开两条轨道处理。"}},
+{"@type":"Question","name":"深夜散步系列为什么改成固定路线？","acceptedAnswer":{"@type":"Answer","text":"10月下旬连续三期路线重复后观众反馈疲劳，11月5日起固定为苏州河—外白渡桥往返，每期只换一个观察点，时长压到9分钟。"}},
+{"@type":"Question","name":"新手想拍vlog需要先买稳定器吗？","acceptedAnswer":{"@type":"Answer","text":"多数手持步行镜头用机身防抖加轻微后期稳定就够。稳定器适合长距离跟拍和骑行，预算有限时优先补一支大光圈定焦。"}}
+]}
+</script>
+<style>
+:root{
+--bg:#fbf7f0;
+--bg-alt:#f4ece0;
+--ink:#2b2118;
+--ink-soft:#6a5a49;
+--line:#e2d5c2;
+--brand:#e8862e;
+--brand-deep:#b85f12;
+--brand-pale:#fbe3c4;
+--accent:#2f6b5f;
+--accent-pale:#dcece8;
+--radius:14px;
+--radius-sm:8px;
+--shadow:0 2px 10px rgba(58,40,20,.08);
+--shadow-lg:0 8px 28px rgba(58,40,20,.13);
+--gap:clamp(14px,2vw,24px);
+--max:1200px;
+--announce-h:40px;
+--head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + var(--head-h) + 12px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{line-height:1.35;margin:0;font-weight:700}
+a{color:var(--brand-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(14px,3vw,28px)}
+.announce{position:sticky;top:0;z-index:60;background:var(--brand-deep);color:#fff8ec;font-size:13.5px;height:var(--announce-h);display:flex;align-items:center}
+.announce .wrap{display:flex;gap:10px;align-items:center;width:100%;overflow:hidden}
+.announce b{background:#fff8ec;color:var(--brand-deep);border-radius:4px;padding:1px 7px;font-size:12px;white-space:nowrap;letter-spacing:.5px}
+.announce a{color:#ffe0b8;white-space:nowrap;text-decoration:underline}
+.announce p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header.site{position:sticky;top:var(--announce-h);z-index:55;background:rgba(251,247,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:18px;height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--ink);letter-spacing:.5px;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand .mark{width:34px;height:34px;flex:0 0 34px}
+nav.main{margin-left:6px}
+nav.main ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav.main a{display:block;padding:6px 10px;border-radius:8px;color:var(--ink-soft);font-size:14.5px;font-weight:600}
+nav.main a:hover,nav.main a.active{background:var(--brand-pale);color:var(--brand-deep);text-decoration:none}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:99px;padding:2px 4px 2px 12px}
+.search input{border:0;outline:0;background:transparent;font-size:14px;width:130px;padding:5px 4px;color:var(--ink);font-family:inherit}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:99px;padding:6px 13px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.search button:hover{background:var(--brand-deep)}
+.burger{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;cursor:pointer;font-size:14px;font-weight:700;color:var(--ink)}
+.srch-note{display:none;font-size:13px;color:var(--brand-deep);background:var(--brand-pale);border-radius:8px;padding:7px 12px;margin:0 0 8px}
+.hero{padding:clamp(28px,5vw,56px) 0 clamp(24px,4vw,44px);position:relative;overflow:hidden;background:
+radial-gradient(1000px 420px at 82% -60px,var(--brand-pale),transparent 70%),
+radial-gradient(700px 320px at 8% 120%,var(--accent-pale),transparent 70%)}
+.hero-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(22px,4vw,48px);align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--accent);background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);letter-spacing:2px;margin:16px 0 12px;color:var(--ink)}
+.hero h1 small{display:block;font-size:clamp(13px,1.6vw,15px);letter-spacing:.28em;color:var(--brand-deep);font-weight:700;margin-top:10px}
+.hero p.lead{font-size:clamp(15px,1.8vw,17px);color:var(--ink-soft);max-width:38em;margin:0 0 20px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.btn{display:inline-block;padding:11px 22px;border-radius:99px;font-weight:700;font-size:15px;border:1px solid transparent;transition:transform .16s ease,box-shadow .16s ease}
+.btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn.primary{background:var(--brand);color:#fff}
+.btn.primary:hover{background:var(--brand-deep)}
+.btn.ghost{border-color:var(--brand);color:var(--brand-deep);background:#fff}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{min-width:96px}
+.hero-stats b{display:block;font-size:22px;color:var(--ink)}
+.hero-stats span{font-size:12.5px;color:var(--ink-soft);letter-spacing:.04em}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 14px 30px rgba(120,70,20,.15))}
+section.block{padding:clamp(30px,4.4vw,54px) 0;border-top:1px solid var(--line)}
+section.block:first-of-type{border-top:0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head h2{font-size:clamp(21px,2.6vw,27px);letter-spacing:.5px}
+.sec-head h2 i{font-style:normal;color:var(--brand);font-weight:800}
+.sec-head .sub{font-size:13.5px;color:var(--ink-soft);max-width:44em}
+.more{font-size:13.5px;font-weight:700;white-space:nowrap}
+.grid{display:grid;gap:var(--gap)}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card .thumb{aspect-ratio:16/10;width:100%;object-fit:cover;background:var(--bg-alt)}
+.card .pad{padding:16px 17px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:16.5px;letter-spacing:.2px}
+.card p{margin:0;font-size:14px;color:var(--ink-soft)}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.tag{font-size:12px;background:var(--bg-alt);color:var(--ink-soft);border:1px solid var(--line);border-radius:99px;padding:2px 10px;font-weight:600}
+.tag.warm{background:var(--brand-pale);border-color:#f0cfa2;color:var(--brand-deep)}
+.meta{font-size:12.5px;color:var(--ink-soft);display:flex;gap:12px;flex-wrap:wrap}
+.meta time{font-variant-numeric:tabular-nums}
+.list{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.list li{display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;padding:13px 16px;border-top:1px solid var(--line);align-items:baseline}
+.list li:first-child{border-top:0}
+.list li:hover{background:var(--bg-alt)}
+.list .date{font-size:12.5px;color:var(--brand-deep);font-weight:700;font-variant-numeric:tabular-nums}
+.list a{font-size:14.5px;font-weight:600;color:var(--ink)}
+.list small{display:block;color:var(--ink-soft);font-size:12.5px;font-weight:400;margin-top:2px}
+.chan{display:flex;flex-wrap:wrap;gap:9px}
+.chan a{background:#fff;border:1px solid var(--line);border-radius:99px;padding:7px 15px;font-size:14px;font-weight:600;color:var(--ink);transition:background .15s}
+.chan a:hover{background:var(--brand-pale);border-color:#eec69a;text-decoration:none}
+.chan a span{color:var(--brand-deep);font-size:12px;margin-left:4px}
+.article-wrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(22px,3.4vw,40px);align-items:start}
+.prose h2{margin-bottom:6px}
+.prose h3{font-size:17.5px;margin:26px 0 8px;padding-left:12px;border-left:4px solid var(--brand);letter-spacing:.2px}
+.prose p{margin:0 0 14px;font-size:15.5px;color:#3a2e23}
+.prose ul{margin:0 0 16px;padding-left:20px;font-size:15px;color:#3a2e23}
+.prose li{margin-bottom:6px}
+.callout{background:var(--accent-pale);border:1px solid #bcd9d2;border-left:5px solid var(--accent);border-radius:var(--radius-sm);padding:14px 16px;margin:0 0 16px;font-size:14.5px}
+.callout b{color:var(--accent)}
+.verdict{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin:0 0 18px;box-shadow:var(--shadow)}
+.verdict p{margin:0 0 8px;font-size:15px}
+.verdict p:last-child{margin-bottom:0}
+.verdict .lead-in{font-size:12.5px;letter-spacing:.1em;color:var(--brand-deep);font-weight:800;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 16px;background:#fff}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--bg-alt);font-size:13px;letter-spacing:.03em}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.aside-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:var(--shadow);margin-bottom:var(--gap)}
+.aside-box h3{font-size:15.5px;margin:0 0 10px;letter-spacing:.3px}
+.aside-nav{list-style:none;margin:0;padding:0;font-size:14px}
+.aside-nav li{border-top:1px dashed var(--line)}
+.aside-nav li:first-child{border-top:0}
+.aside-nav a{display:block;padding:8px 0;color:var(--ink-soft);font-weight:600}
+.aside-nav a.active,.aside-nav a:hover{color:var(--brand-deep);text-decoration:none}
+.quote{background:var(--brand-pale);border-radius:var(--radius);padding:18px 20px;border:1px solid #f0cfa2}
+.quote p{margin:0 0 8px;font-size:14.5px;color:#5a4023}
+.quote cite{font-style:normal;font-size:12.5px;color:var(--brand-deep);font-weight:700}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:12px}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px 14px 58px;position:relative;font-size:14.5px;color:#3a2e23}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:14px;top:13px;width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.steps b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:3px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.compare>div{padding:16px 18px}
+.compare>div+div{border-left:1px solid var(--line)}
+.compare .head{font-size:13px;font-weight:800;letter-spacing:.06em;padding-bottom:8px;margin-bottom:10px;border-bottom:1px dashed var(--line)}
+.compare .col-a .head{color:var(--brand-deep)}
+.compare .col-b .head{color:var(--accent)}
+.compare ul{margin:0;padding-left:18px;font-size:14px;color:#3a2e23}
+.compare li{margin-bottom:7px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:13px 44px 13px 16px;font-weight:700;font-size:15px;position:relative;list-style:none;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:11px;font-size:19px;color:var(--brand);font-weight:700;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details[open] summary{background:var(--bg-alt);border-bottom:1px solid var(--line)}
+.faq .ans{padding:12px 16px 15px;font-size:14.5px;color:#3a2e23}
+.faq .ans p{margin:0}
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;box-shadow:var(--shadow)}
+.cmt .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.cmt .av{width:30px;height:30px;border-radius:50%;background:var(--brand-pale);color:var(--brand-deep);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px;flex:0 0 30px}
+.cmt .nm{font-size:14px;font-weight:700}
+.cmt .dt{font-size:12px;color:var(--ink-soft);margin-left:auto;font-variant-numeric:tabular-nums}
+.cmt p{margin:0;font-size:14px;color:#3a2e23}
+.cmt .ref{display:inline-block;font-size:12px;background:var(--accent-pale);color:var(--accent);border-radius:4px;padding:1px 7px;margin-top:8px;font-weight:700}
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 20px 8px}
+.timeline li::before{content:"";position:absolute;left:-30px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+.timeline b{display:block;font-size:14px;color:var(--brand-deep);font-variant-numeric:tabular-nums}
+.timeline p{margin:2px 0 0;font-size:14px;color:#3a2e23}
+.tag-index{display:flex;flex-wrap:wrap;gap:8px}
+.tag-index a{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:7px 13px;font-size:13.5px;color:var(--ink);font-weight:600}
+.tag-index a:hover{background:var(--brand-pale);border-color:#eec69a;text-decoration:none}
+.tag-index a em{font-style:normal;color:var(--ink-soft);font-size:12px;margin-left:5px;font-variant-numeric:tabular-nums}
+footer.site{background:#2b2118;color:#e9dcc9;margin-top:10px;padding:clamp(30px,4vw,48px) 0 18px;font-size:14px}
+footer.site a{color:#f3cb95}
+.f-top{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,.8fr));gap:clamp(18px,3vw,36px);padding-bottom:26px;border-bottom:1px solid #4a3a2a}
+.f-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:#fff;margin-bottom:10px}
+.f-brand .mark{width:30px;height:30px}
+footer.site p{margin:0 0 8px;line-height:1.7;color:#c9b8a2}
+footer h4{font-size:13.5px;letter-spacing:.14em;color:#f3cb95;margin:0 0 10px}
+.f-links{list-style:none;margin:0;padding:0}
+.f-links li{margin-bottom:6px}
+.f-links a{font-size:13.5px;color:#c9b8a2}
+.f-links a:hover{color:#fff}
+.f-note{font-size:12.5px;color:#9c8b77;border-top:1px dashed #4a3a2a;padding-top:14px;margin-top:16px;line-height:1.7}
+.f-bot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#9c8b77;padding-top:14px}
+#toTop{position:fixed;right:16px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--brand-deep);font-size:17px;font-weight:800;cursor:pointer;box-shadow:var(--shadow-lg);display:none;align-items:center;justify-content:center}
+#toTop.show{display:flex}
+#toTop:hover{background:var(--brand-pale)}
+.note-inline{font-size:13px;color:var(--ink-soft);margin:-6px 0 14px}
+.pill-fact{display:inline-block;font-size:12px;background:var(--accent-pale);color:var(--accent);border-radius:4px;padding:1px 7px;font-weight:700;margin-right:6px}
+.pill-hold{display:inline-block;font-size:12px;background:#f0e0c8;color:#8a5a1c;border-radius:4px;padding:1px 7px;font-weight:700;margin-right:6px}
+.pill-rumor{display:inline-block;font-size:12px;background:#eee3e0;color:#8a3c2c;border-radius:4px;padding:1px 7px;font-weight:700;margin-right:6px}
+@media (max-width:1000px){
+.hero-in{grid-template-columns:1fr}
+.hero-art{max-width:560px}
+.article-wrap{grid-template-columns:1fr}
+.article-wrap aside{order:2}
+.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+nav.main{display:none;position:absolute;left:0;right:0;top:var(--head-h);background:var(--bg);border-bottom:1px solid var(--line);padding:10px 14px 16px;box-shadow:var(--shadow-lg)}
+nav.main.open{display:block}
+nav.main ul{flex-direction:column;gap:2px}
+nav.main a{padding:10px 12px}
+.burger{display:inline-block;order:-1}
+.head-tools{margin-left:auto}
+.search input{width:96px}
+.hbar{gap:10px}
+.g3,.g2,.comments,.compare{grid-template-columns:1fr}
+.compare>div+div{border-left:0;border-top:1px solid var(--line)}
+.list li{grid-template-columns:74px minmax(0,1fr)}
+.hero-stats{gap:18px}
+}
+@media (max-width:400px){
+.brand{font-size:17px}
+.search input{width:74px}
+.search button{padding:6px 10px}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*{transition:none!important;animation:none!important}
+.card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="announce" role="region" aria-label="更新公告">
+  <div class="wrap">
+    <b>更新</b>
+    <p><strong>溏心vlog</strong> 11月7日上线《苏州河早市14分钟》正片，11月8日补发晨间早餐番外与雨天通勤器材清单 <a href="/#latest">查看更新列表</a></p>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap hbar">
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mainnav">☰ 菜单</button>
+    <a class="brand" href="/#top" aria-label="溏心vlog 首页">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#e8862e"/>
+        <ellipse cx="32" cy="34" rx="17" ry="14" fill="#fff3df"/>
+        <ellipse cx="32" cy="33" rx="8" ry="7" fill="#f6a83c"/>
+        <circle cx="18" cy="22" r="3" fill="#fff3df"/>
+        <circle cx="46" cy="22" r="2.4" fill="#fff3df" opacity=".8"/>
+      </svg>
+      <span>溏心vlog</span>
+    </a>
+    <nav class="main" id="mainnav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">频道概览</a></li>
+        <li><a href="/#picks">精选片单</a></li>
+        <li><a href="/#latest">更新日志</a></li>
+        <li><a href="/#channels">分类入口</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">拍摄指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#reviews">观众评论</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <form class="search" role="search" id="searchForm" autocomplete="off">
+        <label for="q" class="sr-only" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="q" name="q" type="search" placeholder="搜索片名或器材" aria-label="搜索片名或器材">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <p class="srch-note wrap" id="srchNote" role="status" aria-live="polite"></p>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-in">
+      <div>
+        <span class="kicker">城市漫游 · 生活记录 · 手作早餐</span>
+        <h1 id="hero-title">溏心vlog<small>WALK · COOK · RECORD</small></h1>
+        <p class="lead">一条苏州河早市路线走过三个菜场口，拍到摊主六点二十摆出的第一笼小笼；旧书店的翻书声、雨天通勤的车轮声、深夜外白渡桥的风声也都在素材库里。片子偏长，信息偏碎，剪的是日常里能落地的观察。</p>
+        <div class="cta">
+          <a class="btn primary" href="/#picks">看本周精选片单</a>
+          <a class="btn ghost" href="/#guide">取拍摄与剪片清单</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>142</b><span>已发布正片</span></div>
+          <div><b>9</b><span>固定栏目</span></div>
+          <div><b>14:12</b><span>11月7日片长</span></div>
+          <div><b>周三 / 周六</b><span>常规更新日</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 460 380" role="img" aria-label="手绘风格的城市清晨：相机、搪瓷碗与河岸栏杆">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fbe3c4"/>
+              <stop offset="1" stop-color="#fbf7f0"/>
+            </linearGradient>
+            <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#bcd9d2"/>
+              <stop offset="1" stop-color="#dcece8"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="460" height="380" rx="22" fill="url(#sky)"/>
+          <circle cx="356" cy="72" r="34" fill="#f6a83c" opacity=".85"/>
+          <path d="M0 236h460v144H0z" fill="url(#water)"/>
+          <path d="M0 236h460" stroke="#8fbfb4" stroke-width="2"/>
+          <path d="M26 258c40-10 74 6 112-2s70-12 108-2 76 8 112-2 68-4 76 0" stroke="#ffffff" stroke-width="3" fill="none" opacity=".7"/>
+          <g fill="#c98b4b" opacity=".55">
+            <rect x="34" y="150" width="52" height="88" rx="3"/>
+            <rect x="96" y="128" width="40" height="110" rx="3"/>
+            <rect x="146" y="164" width="46" height="74" rx="3"/>
+            <rect x="42" y="140" width="10" height="12"/>
+          </g>
+          <g fill="#b85f12" opacity=".35">
+            <rect x="290" y="158" width="44" height="80" rx="3"/>
+            <rect x="344" y="136" width="52" height="102" rx="3"/>
+            <rect x="406" y="168" width="38" height="70" rx="3"/>
+          </g>
+          <rect x="142" y="246" width="176" height="96" rx="14" fill="#fff" stroke="#e0cdb4" stroke-width="2"/>
+          <rect x="156" y="258" width="86" height="62" rx="7" fill="#2b2118"/>
+          <circle cx="199" cy="289" r="21" fill="#f6a83c"/>
+          <circle cx="199" cy="289" r="10" fill="#fff3df"/>
+          <rect x="252" y="262" width="52" height="10" rx="5" fill="#e0cdb4"/>
+          <rect x="252" y="280" width="52" height="10" rx="5" fill="#e0cdb4"/>
+          <rect x="252" y="298" width="34" height="10" rx="5" fill="#e8862e"/>
+          <rect x="176" y="230" width="52" height="20" rx="8" fill="#2b2118"/>
+          <ellipse cx="86" cy="322" rx="40" ry="17" fill="#fff3df" stroke="#e0cdb4" stroke-width="2"/>
+          <ellipse cx="86" cy="319" rx="21" ry="9" fill="#f6a83c"/>
+          <path d="M56 336c14 8 46 8 60 0" stroke="#e0cdb4" stroke-width="2" fill="none"/>
+          <path d="M300 300c18-14 40-14 58 0" stroke="#8fbfb4" stroke-width="3" fill="none"/>
+          <g stroke="#2b2118" stroke-width="2" opacity=".45" fill="none">
+            <path d="M254 322c12-6 24-6 36 0"/>
+            <path d="M276 322c12-6 24-6 36 0"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>01</i> 频道概览：日常记录的取景半径</h2>
+          <p class="sub">内容集中在上海内环以内步行可达的范围，按清晨、午后、夜间三段时段取材。每期围绕一个具体场所，不拍综合混剪。</p>
+        </div>
+        <a class="more" href="/#channels">看全部栏目 →</a>
+      </div>
+      <div class="grid g3">
+        <article class="card">
+          <img class="thumb" src="https://picsum.photos/seed/tangxin-market-01/640/400" width="640" height="400" loading="lazy" alt="清晨菜市场摊位上的青菜与竹筐">
+          <div class="pad">
+            <h3>菜市场早晨：六点二十的摊口</h3>
+            <p>苏州河沿线三个菜场口的开门顺序不同，镇坪路最早，六点十分就有摊主在拆泡沫箱。跟拍固定在周三。</p>
+            <div class="tagrow"><span class="tag warm">早市</span><span class="tag">镇坪路</span><span class="tag">周三</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="https://picsum.photos/seed/tangxin-book-02/640/400" width="640" height="400" loading="lazy" alt="旧书店靠墙的书架与木梯">
+          <div class="pad">
+            <h3>旧书店翻书声与二手唱片</h3>
+            <p>福州路两家旧书店的层高和回声差别明显，收音位置换到书架第二层，翻页声才不糊。</p>
+            <div class="tagrow"><span class="tag warm">旧书店</span><span class="tag">福州路</span><span class="tag">收音</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="https://picsum.photos/seed/tangxin-night-03/640/400" width="640" height="400" loading="lazy" alt="夜间河岸栏杆与远处桥灯">
+          <div class="pad">
+            <h3>深夜散步：外白渡桥往返九分钟</h3>
+            <p>10月底路线重复引发观众反馈后，11月5日起固定苏州河至外白渡桥往返，每期只换一个观察点。</p>
+            <div class="tagrow"><span class="tag warm">深夜散步</span><span class="tag">外白渡桥</span><span class="tag">11月5日</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="picks">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>02</i> 精选片单：三条可以反复看的完整记录</h2>
+          <p class="sub">按信息密度挑选，不按播放量排。每条都标注拍摄日期与主要器材，便于对照。</p>
+        </div>
+        <a class="more" href="/#latest">看最新更新 →</a>
+      </div>
+      <div class="grid g2">
+        <article class="card">
+          <img class="thumb" src="https://picsum.photos/seed/tangxin-river-04/800/500" width="800" height="500" loading="lazy" alt="苏州河沿岸步道与清晨行人">
+          <div class="pad">
+            <h3>苏州河早市14分钟完整版</h3>
+            <p>11月7日发布。从镇坪路桥下到长寿路码头，记录三个摊口的开档顺序；第7分钟起是摊主老周讲进货渠道的原声，未做降噪。</p>
+            <div class="meta"><time datetime="2026-11-07">11月7日</time><span>14分12秒</span><span>FX30 + 18-50mm</span></div>
+            <div class="tagrow"><span class="tag warm">早市全片</span><span class="tag">原声</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="thumb" src="https://picsum.photos/seed/tangxin-breakfast-05/800/500" width="800" height="500" loading="lazy" alt="木桌上搪瓷碗里的手作早餐">
+          <div class="pad">
+            <h3>手作早餐番外：一碗咸豆花的三种做法</h3>
+            <p>11月8日补发。比较石膏点浆与内酯点浆的凝固时间，厨房台面实录，附失败两次的原因说明。</p>
+            <div class="meta"><time datetime="2026-11-08">今天</time><span>8分36秒</span><span>厨房固定机位</span></div>
+            <div class="tagrow"><span class="tag warm">咸豆花</span><span class="tag">早餐</span><span class="tag">番外</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="latest">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>03</i> 更新日志：近三十天发布记录</h2>
+          <p class="sub">按上传日期排列，右侧注明素材来源与改动。部分条目录制于室内，与正片分开发布。</p>
+        </div>
+      </div>
+      <ul class="list">
+        <li><span class="date">11月8日</span><a href="/#picks">早餐番外：咸豆花点浆对比<small>今天上线，两次失败片段保留在片尾</small></a></li>
+        <li><span class="date">11月7日</span><a href="/#picks">苏州河早市14分钟正片<small>本月最长一条，摊主原声未降噪</small></a></li>
+        <li><span class="date">11月5日</span><a href="/#overview">深夜散步改固定路线首期<small>苏州河—外白渡桥往返，时长压缩到9分钟</small></a></li>
+        <li><span class="date">11月2日</span><a href="/#guide">雨天通勤器材清单<small>机身防抖与镜头遮雨罩实测记录</small></a></li>
+        <li><span class="date">10月30日</span><a href="/#deep">旧书店收音位置对比<small>书架第二层与临窗位的声音差别</small></a></li>
+        <li><span class="date">10月26日</span><a href="/#channels">二手唱片店探访第三期<small>福州路两家店，层高与回声记录</small></a></li>
+        <li><span class="date">10月18日</span><a href="/#reviews">观众提问回复：稳定器还要不要买<small>按拍摄场景分三类回答</small></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="channels">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>04</i> 分类入口：按场所与时段找片</h2>
+          <p class="sub">栏目按素材来源划分，同一个场所会在不同栏目重复出现，片单不重叠。</p>
+        </div>
+      </div>
+      <div class="chan">
+        <a href="/#picks">早市与菜场<span>23</span></a>
+        <a href="/#channels">旧书店探访<span>17</span></a>
+        <a href="/#overview">深夜散步路线<span>19</span></a>
+        <a href="/#picks">手作早餐<span>26</span></a>
+        <a href="/#guide">雨天通勤拍摄<span>11</span></a>
+        <a href="/#channels">二手唱片店<span>9</span></a>
+        <a href="/#deep">收音与降噪<span>14</span></a>
+        <a href="/#guide">器材与手持稳定<span>12</span></a>
+        <a href="/#latest">一周片单回顾<span>8</span></a>
+        <a href="/#reviews">观众问答<span>15</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="deep">
+    <div class="wrap article-wrap">
+      <article class="prose">
+        <h2><i>05</i> 深度解析：把一条片子拆成可核对的结构</h2>
+        <p class="note-inline">以下判断只针对11月7日《苏州河早市14分钟》这一条，不外推到整个频道。</p>
+
+        <div class="verdict">
+          <p class="lead-in">核心判断</p>
+          <p>这条片子的信息量集中在第6—9分钟：三个摊口的开档顺序、老周的进货渠道、以及六点四十后客流上升的实拍。前三分钟的画面漂亮，但去掉不影响理解。</p>
+          <p>反过来说，如果只保留后段原声而删掉前段空镜，观众会更难判断摊口的空间位置。空镜在这里承担的是方位说明，不是气氛。</p>
+        </div>
+
+        <h3>1. 时间线：11月7日清晨的六个节点</h3>
+        <table>
+          <thead><tr><th>时间</th><th>画面内容</th><th>作用</th></tr></thead>
+          <tbody>
+            <tr><td class="num">06:02</td><td>镇坪路桥下，摊主拆泡沫箱</td><td>交代开档顺序</td></tr>
+            <tr><td class="num">06:20</td><td>第一笼小笼上蒸屉</td><td>片头字幕里提到的具体时刻</td></tr>
+            <tr><td class="num">06:41</td><td>客流上升，摊口前排三人</td><td>与后面老周原声对齐</td></tr>
+            <tr><td class="num">07:05</td><td>菜场口卖豆制品的摊子支起</td><td>第二摊口</td></tr>
+            <tr><td class="num">07:28</td><td>老周讲进货渠道</td><td>全片信息密度最高段</td></tr>
+            <tr><td class="num">07:52</td><td>长寿路码头段收尾</td><td>第三摊口，仅空镜</td></tr>
+          </tbody>
+        </table>
+        <p>这六个节点在片子里是顺序出现的，没有插叙。对比10月26日那条二手唱片店，那条用了三段倒叙，结果观众在评论区反复问“第一家和第二家是不是同一个位置”。这次改成顺叙，位置问题就少了。</p>
+
+        <h3>2. 数据对比：搬运时间与镜头数量的取舍</h3>
+        <p>从镇坪路桥下走到长寿路码头，实走约1.9公里，导航显示24分钟。片子里这段只占4分10秒，因为中间剪掉了两次等红灯和一次跟丢摊主。留下的镜头是37个，平均每6.8秒切一次，比频道平均值9.2秒更碎。</p>
+        <p>碎的原因不是炫技，是摊位移动快，长镜头容易拍成背影。观众在11月7日当晚的评论里提到“终于看清摊子怎么挪的”，说明这个节奏是有用的。</p>
+
+        <h3>3. 说法差异：白平衡设定与摊主口述</h3>
+        <p>菜市场顶棚的日光灯偏绿，实测色温在4100K上下，但摊主坚持说“灯是新换的白光”。这里事实与转述分开：机器参数按4300K手动设定，摊主的说法作为原声保留，不做纠正，也不当结论用。</p>
+        <div class="callout"><b>可核对项：</b>原始素材文件夹里，11月7日06:02—07:52共有41段文件，其中4段因风噪废弃。剪进正片的是37段。</div>
+
+        <h3>4. 规则前后变化：深夜散步为什么改</h3>
+        <p>10月26日到10月30日连续三期的深夜散步，路线都在苏州河北岸来回折返。11月2日的观众反馈集中指向“走法重复”。11月5日起改成固定往返，每期只换一个观察点，时长从14分钟压到9分钟。</p>
+        <p>这个改动有效的地方在于，观众能记住路线，注意力转到细节。代价是取景范围收窄，老观众已经开始问“什么时候去南岸”。目前没有排期，属于推测层面的问题，不做承诺。</p>
+
+        <h3>5. 拍摄器材：三个位置的实际配置</h3>
+        <ul>
+          <li><span class="pill-fact">事实</span>主力机索尼FX30，配适马18-50mm F2.8，早市手持为主。</li>
+          <li><span class="pill-fact">事实</span>弱光段补35mm F1.4，用于旧书店临窗位。</li>
+          <li><span class="pill-hold">回应</span>11月2日雨天通勤那期被问“为什么不换定焦”，回复里说明是因为要兼顾雨棚下的变焦。</li>
+          <li><span class="pill-rumor">转述</span>评论区有说法称FX30在持续录制40分钟后发热，实际这次最长单段录制为22分钟，未出现该情况。</li>
+        </ul>
+      </article>
+
+      <aside aria-label="深度解析目录与侧栏">
+        <div class="aside-box">
+          <h3>本页目录</h3>
+          <ul class="aside-nav" id="asideNav">
+            <li><a href="/#overview">频道概览</a></li>
+            <li><a href="/#picks">精选片单</a></li>
+            <li><a href="/#latest">更新日志</a></li>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">拍摄指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#reviews">观众评论</a></li>
+          </ul>
+        </div>
+        <div class="aside-box quote">
+          <h3>一句话结论</h3>
+          <p>早市片的胜负手在开档那二十分钟，晚于六点半到，画面里只剩买家。</p>
+          <cite>—— 11月7日剪辑笔记</cite>
+        </div>
+        <div class="aside-box">
+          <h3>相关推荐</h3>
+          <div class="tag-index">
+            <a href="/#guide">手持防抖设置<em>12</em></a>
+            <a href="/#deep">领夹麦贴衣领<em>9</em></a>
+            <a href="/#channels">旧书店收音位<em>7</em></a>
+            <a href="/#picks">菜场原声保留<em>15</em></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>06</i> 体验指南：第一次拍菜市场早晨的五个动作</h2>
+          <p class="sub">按实际操作顺序排，不含器材推荐堆叠。每一步都给出可检验的结果。</p>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><b>前一晚定好白平衡</b>菜市场顶棚多为日光灯，先用灰卡在现场拍一张，把色温记下来。第二天直接手动设定，不交给自动。</li>
+        <li><b>六点前到场，走一遍动线</b>先不拍，从入口走到最里面，记下三个摊口的相对位置。镇坪路桥下这段1.9公里，走完约24分钟。</li>
+        <li><b>先收环境声，再开机</b>枪麦朝天花板收反射音，录30秒空场声备用。后期铺底噪时比现场补录自然。</li>
+        <li><b>把原声当主线</b>摊主说话时不切画面，宁可留长。11月7日那条的第7分钟起就是连续原声，剪辑上只做了音量平衡。</li>
+        <li><b>剪完先自查位置逻辑</b>回放一遍，问自己三个摊口是否分得清。分不清就补空镜，不要靠字幕解释。</li>
+      </ol>
+
+      <div class="sec-head" style="margin-top:34px">
+        <div><h2><i>06b</i> 对照面板：两种拍法的差别</h2></div>
+      </div>
+      <div class="compare">
+        <div class="col-a">
+          <div class="head">手持跟拍</div>
+          <ul>
+            <li>机动性强，摊主挪位能立刻跟上</li>
+            <li>画面有轻微晃动，需后期稳定</li>
+            <li>适合早市、通勤这类移动场景</li>
+            <li>11月7日正片约八成镜头为手持</li>
+          </ul>
+        </div>
+        <div class="col-b">
+          <div class="head">固定机位</div>
+          <ul>
+            <li>画面稳，适合长段原声</li>
+            <li>摊口位置一变就要重新架机</li>
+            <li>适合旧书店、厨房台面</li>
+            <li>早餐番外除切菜段外均为固定机位</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>07</i> 常见问题：更新节奏与拍摄细节</h2>
+          <p class="sub">问题来自11月1日至8日的评论与私信，答案只讲具体做法。</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>素材一般多久更新一次？</summary>
+          <div class="ans"><p>周更两到三条正片。工作日早餐片段放在周三，长片放在周六。11月7日上传的苏州河早市片长14分钟，是本月最长的一条；11月8日补发的咸豆花番外只有8分36秒。</p></div>
+        </details>
+        <details>
+          <summary>拍菜市场早晨用什么机器和镜头？</summary>
+          <div class="ans"><p>主力机索尼FX30，配适马18-50mm F2.8，弱光下用35mm F1.4补拍。菜市场顶棚光线偏绿，白平衡手动定在4300K左右。机身防抖够用，长距离跟拍才考虑稳定器。</p></div>
+        </details>
+        <details>
+          <summary>旧书店和二手唱片的拍摄如何收音？</summary>
+          <div class="ans"><p>室内翻书声用领夹麦贴近衣领收录，环境声另用一支枪麦朝天花板收反射音。后期在Audition里分成两条轨道处理，翻页声压到-18LUFS附近，回声轨保持更低电平。</p></div>
+        </details>
+        <details>
+          <summary>深夜散步系列为什么改成固定路线？</summary>
+          <div class="ans"><p>10月26日到30日连续三期路线重复后，观众反馈集中指向“走法重复”。11月5日起固定为苏州河至外白渡桥往返，每期只换一个观察点，时长压到9分钟。</p></div>
+        </details>
+        <details>
+          <summary>新手想拍vlog需要先买稳定器吗？</summary>
+          <div class="ans"><p>多数手持步行镜头用机身防抖加轻微后期稳定就够。稳定器适合长距离跟拍和骑行。预算有限时，先补一支大光圈定焦，弱光画面的改善比防抖更直接。</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>08</i> 观众评论：关于具体条目的反馈</h2>
+          <p class="sub">选登11月2日至8日的公开评论，保留原有语气，不做统一措辞。</p>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="cmt"><div class="who"><span class="av">阿</span><span class="nm">阿岚在长宁</span><time class="dt" datetime="2026-11-08">11月8日</time></div>
+          <p>咸豆花番外里第二次凝固失败那段留着挺好，比成功那次更有用。就是厨房机位有点低，切菜的手部动作被碗挡住了。</p>
+          <span class="ref">指向：咸豆花点浆对比</span>
+        </div>
+        <div class="cmt"><div class="who"><span class="av">木</span><span class="nm">木鱼不敲</span><time class="dt" datetime="2026-11-07">11月7日</time></div>
+          <p>早市片第7分钟老周那段原声听得很清楚，进货价和摊位费都报了数。这种不剪掉口音的处理方式，比配字幕解说舒服。</p>
+          <span class="ref">指向：苏州河早市14分钟</span>
+        </div>
+        <div class="cmt"><div class="who"><span class="av">周</span><span class="nm">周末补觉</span><time class="dt" datetime="2026-11-06">11月6日</time></div>
+          <p>深夜散步改成往返之后反而有点单调。9分钟里桥洞那段过了两次，同一个角度，第二次可以直接剪掉。</p>
+          <span class="ref">指向：深夜散步11月5日首期</span>
+        </div>
+        <div class="cmt"><div class="who"><span class="av">一</span><span class="nm">一只旧镜头</span><time class="dt" datetime="2026-11-05">11月5日</time></div>
+          <p>器材清单写得实在，雨天那期把遮雨罩的型号也标了。不过18-50mm在雨棚下面确实吃亏，光圈掉得快。</p>
+          <span class="ref">指向：雨天通勤器材清单</span>
+        </div>
+        <div class="cmt"><div class="who"><span class="av">南</span><span class="nm">南岸散步者</span><time class="dt" datetime="2026-11-03">11月3日</time></div>
+          <p>旧书店那期收音位置对比有数据，书架第二层和临窗位的差别能听出来。就是福州路两家店的名字只提了一家，另一家找了半天。</p>
+          <span class="ref">指向：旧书店收音位置对比</span>
+        </div>
+        <div class="cmt"><div class="who"><span class="av">豆</span><span class="nm">豆瓣酱少放</span><time class="dt" datetime="2026-11-02">11月2日</time></div>
+          <p>说实话早市全片前三分钟有点拖，空镜连着空镜。但从第四分钟开始就值回时间了，尤其小笼上屉那个镜头。</p>
+          <span class="ref">指向：苏州河早市14分钟</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>09</i> 相关资讯：近期拍摄与设备动态</h2>
+          <p class="sub">与正片分开记录，时间线按发生顺序排列。</p>
+        </div>
+      </div>
+      <div class="grid g2">
+        <ul class="timeline">
+          <li><b>11月8日</b><p>早餐番外使用新的厨房顶灯，色温从3900K换到4500K，豆花表面反光明显减弱。</p></li>
+          <li><b>11月7日</b><p>苏州河早市拍摄当日气温12℃，镜头从室外进菜场后有约40秒起雾，正片中已剪掉。</p></li>
+          <li><b>11月5日</b><p>深夜散步改固定路线首期上传，片尾字幕标注了观察点编号，方便观众对照。</p></li>
+          <li><b>11月2日</b><p>雨天通勤器材清单发布，遮雨罩型号与镜头防雾布一并列出。</p></li>
+        </ul>
+        <div class="aside-box" style="margin:0">
+          <h3>相关推荐标签</h3>
+          <div class="tag-index">
+            <a href="/#deep">菜市场白平衡<em>4300K</em></a>
+            <a href="/#guide">手持跟拍稳定<em>8</em></a>
+            <a href="/#deep">书架第二层收音<em>6</em></a>
+            <a href="/#picks">小笼上屉镜头<em>11</em></a>
+            <a href="/#channels">福州路旧书店<em>5</em></a>
+            <a href="/#guide">雨天遮雨罩<em>4</em></a>
+            <a href="/#latest">周三早餐档<em>9</em></a>
+            <a href="/#reviews">观众问答合集<em>15</em></a>
+          </div>
+          <p style="font-size:13px;color:var(--ink-soft);margin:12px 0 0">数字为对应条目在本站的收录条数，随更新变动。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="extra">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>10</i> 可信度分层：这条片子里的信息怎么信</h2>
+          <p class="sub">把片中出现的说法按来源拆开，便于引用时区分。</p>
+        </div>
+      </div>
+      <div class="grid g3">
+        <article class="card"><div class="pad">
+          <h3><span class="pill-fact">事实</span>可直接核对</h3>
+          <p>开档时间、摊口数量、步行距离1.9公里、白平衡4300K、41段素材剪入37段。均有拍摄日志或文件记录对应。</p>
+          <div class="tagrow"><span class="tag">拍摄日志</span><span class="tag">11月7日</span></div>
+        </div></article>
+        <article class="card"><div class="pad">
+          <h3><span class="pill-hold">回应</span>被问后说明</h3>
+          <p>雨天为何不换定焦、FX30是否发热，属于评论提问后的说明，立场来自拍摄者本人，读者可保留意见。</p>
+          <div class="tagrow"><span class="tag">评论回复</span><span class="tag">11月2日</span></div>
+        </div></article>
+        <article class="card"><div class="pad">
+          <h3><span class="pill-rumor">推测与转述</span>不作结论</h3>
+          <p>南岸路线何时开拍、设备长时间录制是否稳定，目前没有排期和完整测试，片中不做承诺，也不替他人下判断。</p>
+          <div class="tagrow"><span class="tag">待验证</span><span class="tag">南岸</span></div>
+        </div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="watchlist">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i>11</i> 本周待看清单：按场所排的三条片子</h2>
+          <p class="sub">与精选片单不同，这里按观看顺序排，先看短的再进长的。</p>
+        </div>
+      </div>
+      <div class="grid g3">
+        <article class="card"><div class="pad">
+          <h3>1. 早餐番外 8分36秒</h3>
+          <p>先看这条熟悉厨房机位，再看早市片会更顺。失败两次的原因在片尾两分钟说清楚。</p>
+          <div class="meta"><time datetime="2026-11-08">11月8日</time><span>室内</span></div>
+        </div></article>
+        <article class="card"><div class="pad">
+          <h3>2. 雨天通勤器材 6分12秒</h3>
+          <p>器材段短，适合在通勤路上看。遮雨罩和镜头防雾布两处细节值得记。</p>
+          <div class="meta"><time datetime="2026-11-02">11月2日</time><span>器材</span></div>
+        </div></article>
+        <article class="card"><div class="pad">
+          <h3>3. 苏州河早市 14分12秒</h3>
+          <p>留到周末整段看。第6—9分钟信息最密，建议不倍速。</p>
+          <div class="meta"><time datetime="2026-11-07">11月7日</time><span>户外</span></div>
+        </div></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="f-brand">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#e8862e"/>
+            <ellipse cx="32" cy="34" rx="17" ry="14" fill="#fff3df"/>
+            <ellipse cx="32" cy="33" rx="8" ry="7" fill="#f6a83c"/>
+            <circle cx="18" cy="22" r="3" fill="#fff3df"/>
+          </svg>
+          <span>溏心vlog</span>
+        </div>
+        <p>拍清晨的摊口、午后的书架和夜里的桥，把能复述的细节留给镜头。</p>
+        <p style="font-size:12.5px;color:#9c8b77">页面更新时间：2026-11-08，对应11月8日早餐番外上线与11月7日早市正片发布。</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul class="f-links">
+          <li><a href="/#overview">频道概览</a></li>
+          <li><a href="/#picks">精选片单</a></li>
+          <li><a href="/#latest">更新日志</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul class="f-links">
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">拍摄指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>互动</h4>
+        <ul class="f-links">
+          <li><a href="/#reviews">观众评论</a></li>
+          <li><a href="/#extra">可信度分层</a></li>
+          <li><a href="/#watchlist">本周待看</a></li>
+          <li><a href="/#top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="f-note">站内条目、片长、器材与观众评论均为示例数据，用于展示内容组织方式；涉及具体人物的说法以原片原声为准，引用时请保留时间点。</p>
+    <div class="f-bot">
+      <span>© 2026 溏心vlog · 内容记录</span>
+      <span>示例站点 · 无备案号</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger');
+  var nav=document.getElementById('mainnav');
+  if(burger&&nav){
+    burger.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=760){
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>520){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var navLinks=Array.prototype.slice.call(document.querySelectorAll('#asideNav a'));
+  var targets=navLinks.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.scrollY+140,idx=-1;
+    targets.forEach(function(t,i){
+      if(t&&t.offsetTop<=pos){idx=i;}
+    });
+    navLinks.forEach(function(a,i){a.classList.toggle('active',i===idx);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('q');
+  var note=document.getElementById('srchNote');
+  function findSections(kw){
+    var hits=[];
+    if(!kw)return hits;
+    document.querySelectorAll('section.block').forEach(function(sec){
+      if(sec.textContent.toLowerCase().indexOf(kw.toLowerCase())>-1){
+        var h=sec.querySelector('h2');
+        hits.push({id:sec.id,title:h?h.textContent.replace(/^\d+\s*/,''):sec.id});
+      }
+    });
+    return hits;
+  }
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var kw=input.value.trim();
+      if(!kw){note.style.display='none';return;}
+      var hits=findSections(kw);
+      note.style.display='block';
+      if(hits.length===0){
+        note.textContent='没有找到包含“'+kw+'”的板块，换个词试试：早市、旧书店、收音、器材。';
+        return;
+      }
+      note.textContent='找到'+hits.length+'个相关板块：'+hits.map(function(h){return h.title;}).join('、')+'。已跳到第一个结果。';
+      var first=document.getElementById(hits[0].id);
+      if(first){first.scrollIntoView({behavior:'smooth',block:'start'});}
+    });
+  }
+})();
+</script>
+</body>
+                                                             </html>
